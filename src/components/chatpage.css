@@ -1,0 +1,100 @@
+.chatContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -7rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+.chatConversationContainer {
+    border-bottom: 1px solid #374151;
+    background-color: #141414;
+}
+
+.chatPageContainer {
+    position: fixed;
+    height: 45rem;
+    background-color: #141414;
+    top: 7rem;
+}
+
+.chatContaint {
+    background-color: #374151;
+    text-align: right;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+}
+
+.chatInputContainer {
+    position: fixed;
+    top:44rem;
+    left: 2.5rem;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.inputBtns {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.Chatinput {
+    padding: 0.5rem;
+    width: 12rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid wheat;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.filesUpload {
+    position: relative;
+    top: 1rem;
+    visibility: hidden;
+    left: 0.4rem;
+}
+
+.chatSubMenu {
+    display: flex;
+    gap: 10rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.chatConverSationArea {
+    background-color: #141414;
+    height: 34.5rem;
+    overflow-y: auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 18rem;
+}
+.closeChatBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+.activeChatTab{
+    border-bottom: 2px solid white;
+    /* background-color: green; */
+    /* padding: 1rem; */
+}
