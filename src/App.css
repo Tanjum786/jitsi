@@ -1,14 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: black;
   color: white;
-  height: 100vh;
 }
 
-.conferenceComponent{
+
+.main-container {
   display: flex;
+
+}
+.conferenceComponent {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.conferenceComponentFullWidth{
+  display: flex;
+  justify-content:center;
+  width: 100%;
 }
