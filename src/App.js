@@ -5,15 +5,17 @@ import { ConferencePageNav } from "./components/ConferenceNav";
 import { ConferencePage } from "./components/ConferencePage";
 
 function App() {
-  const [chatOpen,setChatopen]=useState(false)
+  const [chatOpen, setChatopen] = useState(false);
   return (
-    <>
-      <ConferencePageNav chatOpen={chatOpen} setChatopen={setChatopen} />
-      <div className="conferenceComponent">
+    <div className={`${chatOpen ? "main-container" : null}`}>
       <Chatpage chatOpen={chatOpen} setChatopen={setChatopen} />
-        <ConferencePage chatOpen={chatOpen} setChatopen={setChatopen} />
+      <div className="chatPage">
+        <ConferencePageNav chatOpen={chatOpen} setChatopen={setChatopen} />
+        <div className="conferenceComponentFullWidth">
+          <ConferencePage chatOpen={chatOpen} setChatopen={setChatopen} />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -16,10 +16,10 @@ export const ConferencePage = ({ chatOpen, setChatopen }) => {
   return (
     <>
       <div className="conferenceContainer">
-        <div className={`${chatOpen?"mainpagecontainerWidth":"mainPageContainer"} `}>
+        <div className="mainPageContainer">
           <p className="userNameMain">T</p>
         </div>
-        <div className={`${chatOpen?"conferenceToolBarWidth":"conferenceToolBar"} `}>
+        <div className="conferenceToolBar">
           <button className="toolbarBtns">
             <BsFillMicMuteFill />
           </button>
