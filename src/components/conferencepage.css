@@ -1,103 +1,68 @@
 .navContainer {
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
-    padding: 1rem;
     width: 68rem;
-    margin-left: 23rem;
-}
-
-.userProfileContainer {
-    width: 6rem;
-    display: flex;
-    background-color: #141414;
-    justify-content: center;
-    border-radius: 0.5rem;
     padding: 1rem;
-
+    font-size: 2rem;
 }
+
 
 .navContainerFullWidth {
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
     padding: 1rem;
+    font-size: 2rem;
 }
 
 .jitsiLogoContainer {
     display: flex;
-
-}
-
-.jitsiLogo {
-    color: #f8fafc;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.userInitailName {
-    width: 2rem;
-    height: 2rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #86efac;
+    gap: 0.5rem;
 }
 
 .user-ProfileMain-div {
-    position: relative;
+    background-color: #141414;
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+}
+
+.userProfileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.userInitailName {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #86efac;
+
 }
 
 .userNameContainer {
-    display: flex;
-    gap: 0.4rem;
-    background-color: #0f172a;
-    border-radius: 0.5rem;
     font-size: 1rem;
-    margin-left: 0.5rem;
-    width: 5rem;
-    position: absolute;
-    top: 2.5rem;
-    padding: 0.3rem;
-
-}
-
-.mainPageContainer {
     display: flex;
-    justify-content: center;
-    margin-left: 40rem;
-    margin-top: 10rem;
-    width: 18.75rem;
-    height: 18.75rem;
-    transform: translate(-50% -50%);
-}
-
-.mainpagecontainerWidth {
-
-    display: flex;
-    justify-content: center;
-    margin-left: 50rem;
-    margin-top: 10rem;
-    width: 18.75rem;
-    height: 18.75rem;
-    transform: translate(-50% -50%);
-}
-
-.userNameMain {
-    font-size: 5rem;
-    background-color: #86efac;
-    border-radius: 50%;
+    position: relative;
+    bottom: 2.5rem;
+    left: 0.5rem;
     width: 5rem;
-    height: 5rem;
-    padding: 3rem;
-    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #0f172a;
+    padding: 0.5rem;
+
 }
 
 .conferenceContainer {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
     flex-direction: column;
+    align-items: center;
+    gap: 15rem;
 }
 
 .conferenceToolBar {
@@ -106,18 +71,13 @@
     justify-content: center;
     background-color: #141414;
     padding: 0.5rem;
-    margin-left: 30rem;
     border-radius: 0.5rem;
-    width: 35rem;
 
 }
 
 .toolbarBtns {
-    background-color: transparent;
-    border: none;
     color: #f8fafc;
     font-size: 1.5rem;
-    cursor: pointer;
     border: 1px solid transparent;
     padding: 0.7rem;
     box-shadow: 0px 2px 8px 4px rgb(0 0 0 / 25%), 0px 0px 0px 1px rgb(0 0 0 / 15%);
@@ -129,21 +89,26 @@
 
 }
 
-.conferenceToolBarWidth {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-
-    background-color: #141414;
-    padding: 0.5rem;
-    margin-left: 40rem;
-    border-radius: 0.5rem;
-    width: 35rem;
-
-}
 
 .callEndBtn:hover,
 .callEndBtn {
     background-color: red;
-
 }
+
+.userNameMain {
+    background-color: #86efac;
+    padding: 2rem;
+    width: 6rem;
+    margin-top: 10rem;
+    height: 6rem;
+    border-radius: 50%;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.jitsiLogo {
+    color: #f8fafc;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
