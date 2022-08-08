@@ -7,14 +7,14 @@ export const Chatpage = ({ chatOpen, setChatopen }) => {
   const [messageArr, setMessagesArr] = useState([]);
   const [input, setInput] = useState("");
   const [fileAttachment, setfileAttachment] = useState({});
-  const [emptyAttachmentContaner, setemptyAttachmentContaner] = useState(false);
+  const [emptyAttachmentContainer, setemptyAttachmentContainer] = useState(false);
 
   const SendMessageHandler = (e) => {
     e.preventDefault();
     if (input.trim().length > 0) {
       setMessagesArr([...messageArr, { fileAttachment, input: input }]);
       setfileAttachment("");
-      setemptyAttachmentContaner(false);
+      setemptyAttachmentContainer(false);
       setInput("");
     }
   };
@@ -25,12 +25,12 @@ export const Chatpage = ({ chatOpen, setChatopen }) => {
     const file = files[0];
     const filePreview = URL.createObjectURL(files[0]);
     file["filePreview"] = filePreview;
-    setemptyAttachmentContaner(true);
+    setemptyAttachmentContainer(true);
     setfileAttachment(file);
   };
 
   const removeAttachment = () => {
-    setemptyAttachmentContaner(false);
+    setemptyAttachmentContainer(false);
     setfileAttachment("");
   };
 
@@ -65,6 +65,7 @@ export const Chatpage = ({ chatOpen, setChatopen }) => {
                           <a
                             href={el.fileAttachment.filePreview}
                             target="_blank"
+                            rel="noreferrer"
                             download={el.fileAttachment.filePreview}
                           >
                             {el.fileAttachment.name}
@@ -72,6 +73,7 @@ export const Chatpage = ({ chatOpen, setChatopen }) => {
                         ) : el.fileAttachment.type.includes("image") ? (
                           <img
                             src={el.fileAttachment.filePreview}
+                            alt={el.fileAttachment.name}
                             style={{ width: "inherit", height: "5rem" }}
                           />
                         ) : null
@@ -86,7 +88,7 @@ export const Chatpage = ({ chatOpen, setChatopen }) => {
               ) : null}
             </div>
           </div>
-          {emptyAttachmentContaner ? (
+          {emptyAttachmentContainer ? (
             <div className="popupcontainer">
               {fileAttachment.type.includes("image") ? (
                 <>
